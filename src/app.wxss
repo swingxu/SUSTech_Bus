@@ -1,0 +1,18 @@
+/**app.wxss**/
+page{
+  height: 100%;
+  background-color: #F6F6F7;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx 0;
+  box-sizing: border-box;
+  background-color: #F6F6F7;
+  justify-content: space-between;     /* 居中排列 */
+  overflow:auto;
+  margin-bottom: 300rpx;
+} 
+

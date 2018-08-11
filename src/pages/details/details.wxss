@@ -1,0 +1,150 @@
+
+  
+.title {
+    display: flex;
+    background-color: #08474B;
+    width: 100%;
+    height: 280rpx;
+    padding: 40rpx 40rpx 0rpx 40rpx;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.from {
+    display: inline-block;
+    padding-top: 80rpx;
+    font-size: 88rpx;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.arrow_area {
+    display: inline-block;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0rpx 20rpx 0rpx 10rpx;
+}
+
+.arrow {
+    width:8px;
+    height:8px;
+    margin-top: 132rpx;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+}
+
+.dest {
+    display: inline-block;
+    padding-top: 80rpx;
+    font-size: 88rpx;
+    color: #ffffff;
+    font-weight: 300;
+
+}
+
+.scroll-view_H{
+    white-space: nowrap;
+    background-color: #ffffff;
+    height: 280rpx;
+    padding: 40rpx 40rpx 40rpx 40rpx;
+    margin-bottom: 20rpx;
+}
+
+.scroll-view-item_H{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100rpx;
+    height: 210srpx;
+    margin-right: 10rpx;
+    justify-content: flex-start;
+}
+
+.vl{
+    writing-mode:vertical-rl;
+    margin: auto;
+    margin-top: 0;
+    letter-spacing:4pt;
+    font-size: 28rpx;
+    color: #3D5758;
+    font-weight: 400;
+}
+
+.circle {
+    display: block;
+    width: 16rpx;
+    height: 16rpx;
+    border-radius: 50%;
+    background-color: #D6DAE0;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 40rpx;
+  }
+
+.timetable{
+    background-color: #ffffff;
+    height: 100%;
+    box-shadow: 0rpx 4rpx 12rpx 6rpx #E7E9EA;
+    padding: 0rpx 0rpx 40rpx 0rpx;
+    max-height: 100%
+
+}
+
+
+.swiper-box{
+    height: 100%
+}
+
+.tab_bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    height:100rpx;
+    font-size: 32rpx;
+    border-bottom:1px solid #F0F0F0;
+    color: #3D5758;
+    line-height: 100rpx;
+  }
+
+  .tav_bar>view{
+    display: flex;
+    align-items: center;
+  }
+
+  .active{
+    color: #ED6C00;
+    border-bottom:3px solid #ED6C00;
+    font-weight: 500;
+  }
+
+
+  .timeWrp{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .timeTB{
+    display: block;
+    margin: 60rpx 30rpx 60rpx 30rpx;
+    flex-direction:row;
+    justify-content: space-between;
+    max-height: 100%
+ } 
+
+  .time-item{
+      display:inline-block;
+      width: 229rpx;
+      height: 40rpx;
+      align-items: center;
+      text-align: center;
+      font-size: 32rpx;
+      color: #3D5758;
+      margin-bottom: 40rpx;
+  }
+

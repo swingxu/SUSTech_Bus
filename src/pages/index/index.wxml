@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="dialog" wx:if="{{showTips}}"></view>
+<view class="tips" wx:if="{{showTips}}">添加到小程序收藏吧！</view>
+
+<scroll-view class='container' style="flex-direction:column;scroll-y:true">
+  <view class='nav'>
+      <view class="tag">
+          <text class="tag-text">{{tag}}</text>
+      </view>
+      <text id='title' >{{title}}</text>
+  </view>
+  <view class='card' wx:for="{{busline}}" id="{{item.order}}" bindtap="bindViewTap">
+    <view class='icon'>
+      <view class='circle' id='circle1'></view>
+      <view class='rectangle'></view>
+      <view class='circle' id='circle2'></view>
+    </view>
+    <view class='line'>
+      <text id='start'>{{item.start}}</text>
+      <text id='end'>{{item.destination}}</text>
+    </view>
+    <view class="status" wx:if="{{item.time != null}}">
+      <text id='time'>{{item.time}}</text>
+      <view class='status-block'>
+          <view class="status-tag {{item.order == -1? 'onRoad':''}}">
+              {{item.status}}
+          </view>
+      </view>
+    </view>
+    <view class='status_null' wx:else>
+        <text class='null_text'>无班车</text>
+    </view>
+  </view>
+  
+</scroll-view>

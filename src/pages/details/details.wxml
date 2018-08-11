@@ -1,0 +1,45 @@
+<!--logs.wxml-->
+<scroll-view class='container' style="flex-direction:column;scroll-y:true;height: 3000rpx;">
+    <view class='title'>
+        <view class='from'>
+            {{from}}
+        </view>
+        <view class='arrow_area'>
+            <view class='arrow'></view>
+        </view>
+        <view class="dest">
+            {{dest}}
+        </view>
+    </view>
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view class="line"></view>
+        <view wx:for="{{stations}}" class="scroll-view-item_H ">
+            <view class='circle'></view>
+            <text class='vl'>{{item}}</text>
+        </view>
+    
+    </scroll-view>
+    <view class="timetable">
+        <view class="tab_bar">
+            <view class="{{_num==0?'active':''}}" data-index='0' bindtap='toggle'>工作日</view>
+            <view class="{{_num==1?'active':''}}" data-index='1' bindtap='toggle'>节假日</view>
+        </view>
+        <swiper current="{{_num}}" class="swiper-box" duration="200" bindchange="bindChange" style='min-height:645rpx'>
+            <swiper-item>
+                <view class="timeWrp">
+                    <view class="timeTB">
+                        <view class="time-item" wx:for="{{time_work}}">{{item}}</view>
+                    </view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+                <view class="timeWrp">
+                    <view class="timeTB">
+                        <view class="time-item" wx:for="{{time_vocation}}">{{item}}</view>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+
+</scroll-view>
